@@ -20,17 +20,18 @@
 
 .header__btn {
   @include fonts(14px, 20px, 400);
-  background-color: $ButtonColor;
   width: 100px;
   height: 32px;
   margin-left: 28px;
   border: none;
   border-radius: 30px;
+  background: rgba(0, 0, 0, 0);
   cursor: pointer;
+  text-decoration-line:underline;
 
   &:hover,
   &:focus {
-    background-color: $AccentButtonColor;
+    color: blue;
     @include transition-base(background-color);
   }
 
@@ -39,6 +40,32 @@
   }
 }
 
+.header__btn2 {
+  @include fonts(14px, 20px, 400);
+  width: 50px;
+  height: 32px;
+  margin-left: 0px;
+  border: none;
+  border-radius: 30px;
+  background: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  text-decoration-line:underline;
+
+  &:hover,
+  &:focus {
+    color: blue;
+    @include transition-base(background-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.slash{
+@media screen and (max-width: 767px) {
+  display: none;
+}}
 .nav {
   display: none;
 

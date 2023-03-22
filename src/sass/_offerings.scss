@@ -163,7 +163,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-    gap: 116px;
+    gap: 80px;
   }
 
   @media screen and (min-width: 1280px) {
@@ -175,6 +175,7 @@
   margin-bottom: 28px;
   display: flex;
   flex-direction: column;
+  max-width: 300px;
 
   &:last-child {
     margin-bottom: 0;

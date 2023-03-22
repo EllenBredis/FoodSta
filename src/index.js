@@ -1,4 +1,4 @@
-// Modal
+// Modal1
 
 
 (() => {
@@ -6,6 +6,48 @@
     openModalBtn: document.querySelector('[data-modal-open]'),
     closeModalBtn: document.querySelector('[data-modal-close]'),
     modal: document.querySelector('[data-modal]'),
+    body: document.querySelector('[data-page]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
+})();
+
+
+// Modal2
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal2-open]'),
+    closeModalBtn: document.querySelector('[data-modal2-close]'),
+    modal: document.querySelector('[data-modal2]'),
+    body: document.querySelector('[data-page]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.body.classList.toggle('no-scroll');
+  }
+})();
+
+
+// / Modal3
+
+
+(() => {
+  const refs = {
+    openModalBtn: document.querySelector('[data-modal3-open]'),
+    closeModalBtn: document.querySelector('[data-modal3-close]'),
+    modal: document.querySelector('[data-modal3]'),
     body: document.querySelector('[data-page]'),
   };
 
