@@ -40,6 +40,11 @@
   }
 }
 
+.reg{
+  @include fonts(14px, 20px, 400);
+  margin-left: 20px;
+}
+
 .header__btn2 {
   @include fonts(14px, 20px, 400);
   width: 50px;
